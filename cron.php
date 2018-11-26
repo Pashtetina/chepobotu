@@ -14,7 +14,6 @@ $commands = [
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ .'/config.php';
 
-exit;
 // Add you bot's API key and name
 $bot_api_key  = TOKEN;
 $bot_username = NAME;
