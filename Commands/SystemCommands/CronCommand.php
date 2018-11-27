@@ -44,6 +44,7 @@ class CronCommand extends SystemCommand
   public function execute()
   {
     $message = $this->getMessage();
+
     $chat_id = $message->getChat()->getId();
     $text    = $message->getText(true);
     $ch = curl_init();
@@ -77,8 +78,8 @@ class CronCommand extends SystemCommand
 
     $data = [
       'parse_mode' => 'html',
-      'chat_id' => 93731196,
-      //'chat_id' => 6569350,
+      //'chat_id' => 93731196,
+      'chat_id' => 6569350,
       'text'    => $text,
     ];
 
